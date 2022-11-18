@@ -1,0 +1,125 @@
+label {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* upload */
+
+.upload-nft-container #form-file-upload {
+  height: 400px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.upload-nft-container #form-file-upload-more {
+  height: 280px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#input-file-upload {
+  display: none;
+}
+
+.upload-nft-container #label-file-upload {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 4px;
+  border-radius: 1rem;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+.upload-nft-container #label-file-upload.drag-active {
+  background-color: #ffffff;
+}
+
+#label-file-upload img {
+  width: auto;
+}
+
+.upload-nft-container .upload-button {
+  background-color: #7b61ff;
+  border-radius: 10rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.upload-nft-container .upload-button:hover {
+  text-decoration-line: underline;
+}
+
+.upload-nft-container #wave {
+  border-width: 4px;
+  border-radius: 1rem;
+  border-color: #6549f6;
+  height: 400px;
+  overflow: hidden;
+  padding-top: 5rem;
+}
+
+#drag-file-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height, 1s ease-in-out;
+  transition: max-height, 1s ease-in-out;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.hide {
+  max-height: 100vh;
+}
+
+.zoom-in-zoom-out {
+  animation: zoom-in-zoom-out 0.5s ease-out 1;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/* Neue Haas Grotesk Text Pro */
+
+@font-face {
+  font-family: "myFirstFont";
+  src: url("../../Assets/fonts/NeueHaasGrotesk/NeueHaasDisplay-Roman.ttf");
+}
+
+.neueHaasGrotesk {
+  font-family: myFirstFont;
+}
+
+.preview-thumb {
+  border-radius: 0.5rem;
+}
